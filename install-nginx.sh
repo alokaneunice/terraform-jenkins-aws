@@ -8,4 +8,4 @@ sudo systemctl enable nginx
 sudo ufw app list
 sudo ufw allow 'Nginx HTTP'
 sudo ufw status
-sudo systemctl status  nginx
+sudo systemctl status nginx

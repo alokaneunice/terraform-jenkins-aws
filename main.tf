@@ -7,7 +7,7 @@ resource "aws_instance" "new-ec2-server" {
   vpc_security_group_ids      = [aws_default_security_group.default-sg.id]
   availability_zone           = var.avail_zone
   associate_public_ip_address = true
-  user_data                   = file("jenkins.sh")
+  user_data                   = file("install-nginx.sh")
   tags = {
     Name = "${var.env_prefix}-jenkins-server"
   }
